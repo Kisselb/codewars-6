@@ -1,0 +1,10 @@
+function deleteNth(arr,n){
+const a = {};
+const b = [];
+for (const el of arr) {
+  if (a[el]) a[el] = a[el] + 1
+  else a[el] = 1
+  if (a[el] <= n) b.push(el)
+}
+  return b;
+}
